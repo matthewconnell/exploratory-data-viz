@@ -236,7 +236,7 @@
 </section>
 <section id="creating-a-map-in-altair" class="slide level2">
 <h2>Creating a map in Altair</h2>
-<div id="ced10b5e" class="cell" data-execution_count="2">
+<div id="fcc86fc5" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a aria-hidden="true" tabindex="-1"></a><span class="im">import</span> altair <span class="im">as</span> alt</span>
 <span id="cb2-2"><a aria-hidden="true" tabindex="-1"></a><span class="im">from</span> vega_datasets <span class="im">import</span> data</span>
 <span id="cb2-3"><a aria-hidden="true" tabindex="-1"></a></span>
@@ -245,23 +245,23 @@
 <div class="cell-output cell-output-display" data-execution_count="2">
 
 <style>
-  #altair-viz-2ae52d4a03a6411d96465febd991b8ab.vega-embed {
+  #altair-viz-a566820aa9224c758af61534c08985a3.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-2ae52d4a03a6411d96465febd991b8ab.vega-embed details,
-  #altair-viz-2ae52d4a03a6411d96465febd991b8ab.vega-embed details summary {
+  #altair-viz-a566820aa9224c758af61534c08985a3.vega-embed details,
+  #altair-viz-a566820aa9224c758af61534c08985a3.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-2ae52d4a03a6411d96465febd991b8ab"></div>
+<div id="altair-viz-a566820aa9224c758af61534c08985a3"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-2ae52d4a03a6411d96465febd991b8ab") {
-      outputDiv = document.getElementById("altair-viz-2ae52d4a03a6411d96465febd991b8ab");
+    if (outputDiv.id !== "altair-viz-a566820aa9224c758af61534c08985a3") {
+      outputDiv = document.getElementById("altair-viz-a566820aa9224c758af61534c08985a3");
     }
 
     const paths = {
@@ -332,28 +332,28 @@
 </section>
 <section id="changing-the-projection-gives-a-more-accurate-representation-of-areas" class="slide level2">
 <h2>Changing the projection gives a more accurate representation of areas</h2>
-<div id="b694074d" class="cell" data-execution_count="3">
+<div id="d5d59faf" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a aria-hidden="true" tabindex="-1"></a>alt.Chart(world_map).mark_geoshape().project(<span class="bu">type</span><span class="op">=</span><span class="st">'equalEarth'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
 
 <style>
-  #altair-viz-1444cc348c804361a6437bd5806c6063.vega-embed {
+  #altair-viz-41ff0ffe30e84e7aa465f32c1982357d.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-1444cc348c804361a6437bd5806c6063.vega-embed details,
-  #altair-viz-1444cc348c804361a6437bd5806c6063.vega-embed details summary {
+  #altair-viz-41ff0ffe30e84e7aa465f32c1982357d.vega-embed details,
+  #altair-viz-41ff0ffe30e84e7aa465f32c1982357d.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-1444cc348c804361a6437bd5806c6063"></div>
+<div id="altair-viz-41ff0ffe30e84e7aa465f32c1982357d"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-1444cc348c804361a6437bd5806c6063") {
-      outputDiv = document.getElementById("altair-viz-1444cc348c804361a6437bd5806c6063");
+    if (outputDiv.id !== "altair-viz-41ff0ffe30e84e7aa465f32c1982357d") {
+      outputDiv = document.getElementById("altair-viz-41ff0ffe30e84e7aa465f32c1982357d");
     }
 
     const paths = {
@@ -426,30 +426,30 @@
 </section>
 <section id="the-fill-and-border-colours-of-countries-can-be-changed" class="slide level2">
 <h2>The fill and border colours of countries can be changed</h2>
-<div id="9d8276b3" class="cell" data-execution_count="4">
+<div id="c7b7c94d" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a aria-hidden="true" tabindex="-1"></a>alt.Chart(world_map).mark_geoshape(</span>
 <span id="cb4-2"><a aria-hidden="true" tabindex="-1"></a>    color<span class="op">=</span><span class="st">'black'</span>, stroke<span class="op">=</span><span class="st">'#706545'</span>, strokeWidth<span class="op">=</span><span class="dv">1</span></span>
 <span id="cb4-3"><a aria-hidden="true" tabindex="-1"></a>).project(<span class="bu">type</span><span class="op">=</span><span class="st">'equalEarth'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
 
 <style>
-  #altair-viz-5ebb8d309b424389ab82e33be46b45e5.vega-embed {
+  #altair-viz-9915f01e56104663994588e90276a43c.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-5ebb8d309b424389ab82e33be46b45e5.vega-embed details,
-  #altair-viz-5ebb8d309b424389ab82e33be46b45e5.vega-embed details summary {
+  #altair-viz-9915f01e56104663994588e90276a43c.vega-embed details,
+  #altair-viz-9915f01e56104663994588e90276a43c.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-5ebb8d309b424389ab82e33be46b45e5"></div>
+<div id="altair-viz-9915f01e56104663994588e90276a43c"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-5ebb8d309b424389ab82e33be46b45e5") {
-      outputDiv = document.getElementById("altair-viz-5ebb8d309b424389ab82e33be46b45e5");
+    if (outputDiv.id !== "altair-viz-9915f01e56104663994588e90276a43c") {
+      outputDiv = document.getElementById("altair-viz-9915f01e56104663994588e90276a43c");
     }
 
     const paths = {
@@ -519,30 +519,30 @@
 </section>
 <section id="we-can-zoom-and-pan-the-map" class="slide level2">
 <h2>We can zoom and pan the map</h2>
-<div id="b67d3c1a" class="cell" data-execution_count="5">
+<div id="91abf253" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a aria-hidden="true" tabindex="-1"></a>alt.Chart(world_map).mark_geoshape(</span>
 <span id="cb5-2"><a aria-hidden="true" tabindex="-1"></a>    color<span class="op">=</span><span class="st">'#2a1d0c'</span>, stroke<span class="op">=</span><span class="st">'#706545'</span>, strokeWidth<span class="op">=</span><span class="fl">0.5</span></span>
 <span id="cb5-3"><a aria-hidden="true" tabindex="-1"></a>).project(<span class="bu">type</span><span class="op">=</span><span class="st">'equalEarth'</span>, scale<span class="op">=</span><span class="dv">500</span>, translate<span class="op">=</span>[<span class="dv">140</span>, <span class="dv">610</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="5">
 
 <style>
-  #altair-viz-41e8291286f64a488ad8de953aa5e9ee.vega-embed {
+  #altair-viz-63d9aef47f574262a60f3507a62f14ea.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-41e8291286f64a488ad8de953aa5e9ee.vega-embed details,
-  #altair-viz-41e8291286f64a488ad8de953aa5e9ee.vega-embed details summary {
+  #altair-viz-63d9aef47f574262a60f3507a62f14ea.vega-embed details,
+  #altair-viz-63d9aef47f574262a60f3507a62f14ea.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-41e8291286f64a488ad8de953aa5e9ee"></div>
+<div id="altair-viz-63d9aef47f574262a60f3507a62f14ea"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-41e8291286f64a488ad8de953aa5e9ee") {
-      outputDiv = document.getElementById("altair-viz-41e8291286f64a488ad8de953aa5e9ee");
+    if (outputDiv.id !== "altair-viz-63d9aef47f574262a60f3507a62f14ea") {
+      outputDiv = document.getElementById("altair-viz-63d9aef47f574262a60f3507a62f14ea");
     }
 
     const paths = {
@@ -613,29 +613,29 @@
 </section>
 <section id="working-with-individual-countries-can-show-regional-details" class="slide level2">
 <h2>Working with individual countries can show regional details</h2>
-<div id="835cd3ea" class="cell" data-execution_count="6">
+<div id="e0f394b3" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a aria-hidden="true" tabindex="-1"></a>state_map <span class="op">=</span> alt.topo_feature(data.us_10m.url, <span class="st">'states'</span>)</span>
 <span id="cb6-2"><a aria-hidden="true" tabindex="-1"></a>alt.Chart(state_map).mark_geoshape().project(<span class="bu">type</span><span class="op">=</span><span class="st">'equalEarth'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="6">
 
 <style>
-  #altair-viz-3cd3c9298e094b4aa921ffeb84beef8e.vega-embed {
+  #altair-viz-419eab5b50184bda9d622c3eb083591f.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-3cd3c9298e094b4aa921ffeb84beef8e.vega-embed details,
-  #altair-viz-3cd3c9298e094b4aa921ffeb84beef8e.vega-embed details summary {
+  #altair-viz-419eab5b50184bda9d622c3eb083591f.vega-embed details,
+  #altair-viz-419eab5b50184bda9d622c3eb083591f.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-3cd3c9298e094b4aa921ffeb84beef8e"></div>
+<div id="altair-viz-419eab5b50184bda9d622c3eb083591f"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-3cd3c9298e094b4aa921ffeb84beef8e") {
-      outputDiv = document.getElementById("altair-viz-3cd3c9298e094b4aa921ffeb84beef8e");
+    if (outputDiv.id !== "altair-viz-419eab5b50184bda9d622c3eb083591f") {
+      outputDiv = document.getElementById("altair-viz-419eab5b50184bda9d622c3eb083591f");
     }
 
     const paths = {
@@ -705,28 +705,28 @@
 </section>
 <section id="there-are-special-projections-for-some-countries-such-as-the-us" class="slide level2">
 <h2>There are special projections for some countries such as the US</h2>
-<div id="36d6bc99" class="cell" data-execution_count="7">
+<div id="c29238fd" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a aria-hidden="true" tabindex="-1"></a>alt.Chart(state_map).mark_geoshape().project(<span class="bu">type</span><span class="op">=</span><span class="st">'albersUsa'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
 
 <style>
-  #altair-viz-f43730ff8d5f4bdc807d1bbecc1d2d22.vega-embed {
+  #altair-viz-2dc1ef93e7534bbcbfb3c7d61336bb0d.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-f43730ff8d5f4bdc807d1bbecc1d2d22.vega-embed details,
-  #altair-viz-f43730ff8d5f4bdc807d1bbecc1d2d22.vega-embed details summary {
+  #altair-viz-2dc1ef93e7534bbcbfb3c7d61336bb0d.vega-embed details,
+  #altair-viz-2dc1ef93e7534bbcbfb3c7d61336bb0d.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-f43730ff8d5f4bdc807d1bbecc1d2d22"></div>
+<div id="altair-viz-2dc1ef93e7534bbcbfb3c7d61336bb0d"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-f43730ff8d5f4bdc807d1bbecc1d2d22") {
-      outputDiv = document.getElementById("altair-viz-f43730ff8d5f4bdc807d1bbecc1d2d22");
+    if (outputDiv.id !== "altair-viz-2dc1ef93e7534bbcbfb3c7d61336bb0d") {
+      outputDiv = document.getElementById("altair-viz-2dc1ef93e7534bbcbfb3c7d61336bb0d");
     }
 
     const paths = {
@@ -795,30 +795,30 @@
 </section>
 <section id="colouring-individual-regions-differently" class="slide level2">
 <h2>Colouring individual regions differently</h2>
-<div id="777822c2" class="cell" data-execution_count="8">
+<div id="752df14c" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a aria-hidden="true" tabindex="-1"></a>(alt.Chart(state_map).mark_geoshape().encode(</span>
 <span id="cb8-2"><a aria-hidden="true" tabindex="-1"></a>    color<span class="op">=</span><span class="st">'id:Q'</span>)</span>
 <span id="cb8-3"><a aria-hidden="true" tabindex="-1"></a>.project(<span class="bu">type</span><span class="op">=</span><span class="st">'albersUsa'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
 
 <style>
-  #altair-viz-926f10d1fae84093aab4a4ddb343d553.vega-embed {
+  #altair-viz-dd7433b219754f318dcab1ca649359b6.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-926f10d1fae84093aab4a4ddb343d553.vega-embed details,
-  #altair-viz-926f10d1fae84093aab4a4ddb343d553.vega-embed details summary {
+  #altair-viz-dd7433b219754f318dcab1ca649359b6.vega-embed details,
+  #altair-viz-dd7433b219754f318dcab1ca649359b6.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-926f10d1fae84093aab4a4ddb343d553"></div>
+<div id="altair-viz-dd7433b219754f318dcab1ca649359b6"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-926f10d1fae84093aab4a4ddb343d553") {
-      outputDiv = document.getElementById("altair-viz-926f10d1fae84093aab4a4ddb343d553");
+    if (outputDiv.id !== "altair-viz-dd7433b219754f318dcab1ca649359b6") {
+      outputDiv = document.getElementById("altair-viz-dd7433b219754f318dcab1ca649359b6");
     }
 
     const paths = {
@@ -890,7 +890,7 @@
 </section>
 <section id="visualizing-data-from-another-dataframe-on-a-map" class="slide level2">
 <h2>Visualizing data from another dataframe on a map</h2>
-<div id="9cb9973c" class="cell" data-execution_count="9">
+<div id="39c43e86" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb9-2"><a aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-3"><a aria-hidden="true" tabindex="-1"></a>state_pop <span class="op">=</span> pd.read_csv(<span class="st">"data/us_population_coordinates_asthma-cases.csv"</span>)</span>
@@ -993,7 +993,7 @@
 </section>
 <section id="linking-datasets-together-via-lookups" class="slide level2">
 <h2>Linking datasets together via lookups</h2>
-<div id="62f57e60" class="cell" data-execution_count="10">
+<div id="4e2c1e96" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a aria-hidden="true" tabindex="-1"></a>(alt.Chart(state_map).mark_geoshape().transform_lookup(</span>
 <span id="cb10-2"><a aria-hidden="true" tabindex="-1"></a>    lookup<span class="op">=</span><span class="st">'id'</span>,</span>
 <span id="cb10-3"><a aria-hidden="true" tabindex="-1"></a>    from_<span class="op">=</span>alt.LookupData(state_pop, <span class="st">'id'</span>, [<span class="st">'population'</span>]))</span>
@@ -1002,23 +1002,23 @@
 <div class="cell-output cell-output-display" data-execution_count="10">
 
 <style>
-  #altair-viz-a5e5b478511f4c3eabaa1f8d43c8e35a.vega-embed {
+  #altair-viz-5318f677cb524d3d97bf1a0e59e524f1.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-a5e5b478511f4c3eabaa1f8d43c8e35a.vega-embed details,
-  #altair-viz-a5e5b478511f4c3eabaa1f8d43c8e35a.vega-embed details summary {
+  #altair-viz-5318f677cb524d3d97bf1a0e59e524f1.vega-embed details,
+  #altair-viz-5318f677cb524d3d97bf1a0e59e524f1.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-a5e5b478511f4c3eabaa1f8d43c8e35a"></div>
+<div id="altair-viz-5318f677cb524d3d97bf1a0e59e524f1"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-a5e5b478511f4c3eabaa1f8d43c8e35a") {
-      outputDiv = document.getElementById("altair-viz-a5e5b478511f4c3eabaa1f8d43c8e35a");
+    if (outputDiv.id !== "altair-viz-5318f677cb524d3d97bf1a0e59e524f1") {
+      outputDiv = document.getElementById("altair-viz-5318f677cb524d3d97bf1a0e59e524f1");
     }
 
     const paths = {
@@ -1090,7 +1090,7 @@
 </section>
 <section id="choropleths-can-be-misleading-since-the-area-of-each-region-matters" class="slide level2">
 <h2>Choropleths can be misleading since the area of each region matters</h2>
-<div id="5f358406" class="cell" data-execution_count="11">
+<div id="f90db934" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a aria-hidden="true" tabindex="-1"></a>us_map <span class="op">=</span> (alt.Chart(state_map).mark_geoshape(color<span class="op">=</span><span class="st">'lightgray'</span>, stroke<span class="op">=</span><span class="st">'white'</span>)</span>
 <span id="cb11-2"><a aria-hidden="true" tabindex="-1"></a>          .project(<span class="bu">type</span><span class="op">=</span><span class="st">'albersUsa'</span>))</span>
 <span id="cb11-3"><a aria-hidden="true" tabindex="-1"></a>points <span class="op">=</span> alt.Chart(state_pop).mark_circle().encode(</span>
@@ -1101,23 +1101,23 @@
 <div class="cell-output cell-output-display" data-execution_count="11">
 
 <style>
-  #altair-viz-fe2ca56b9a014770b555720c2ca01175.vega-embed {
+  #altair-viz-cb226b375b77437b8fac2386bd931732.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-fe2ca56b9a014770b555720c2ca01175.vega-embed details,
-  #altair-viz-fe2ca56b9a014770b555720c2ca01175.vega-embed details summary {
+  #altair-viz-cb226b375b77437b8fac2386bd931732.vega-embed details,
+  #altair-viz-cb226b375b77437b8fac2386bd931732.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-fe2ca56b9a014770b555720c2ca01175"></div>
+<div id="altair-viz-cb226b375b77437b8fac2386bd931732"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-fe2ca56b9a014770b555720c2ca01175") {
-      outputDiv = document.getElementById("altair-viz-fe2ca56b9a014770b555720c2ca01175");
+    if (outputDiv.id !== "altair-viz-cb226b375b77437b8fac2386bd931732") {
+      outputDiv = document.getElementById("altair-viz-cb226b375b77437b8fac2386bd931732");
     }
 
     const paths = {
@@ -1192,7 +1192,7 @@
 </section>
 <section id="some-measures-can-be-influenced-by-the-population-size" class="slide level2">
 <h2>Some measures can be influenced by the population size</h2>
-<div id="999f5a04" class="cell" data-execution_count="12">
+<div id="7b9fec8e" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a aria-hidden="true" tabindex="-1"></a>us_map <span class="op">=</span> (alt.Chart(state_map).mark_geoshape(color<span class="op">=</span><span class="st">'lightgray'</span>, stroke<span class="op">=</span><span class="st">'white'</span>)</span>
 <span id="cb12-2"><a aria-hidden="true" tabindex="-1"></a>          .project(<span class="bu">type</span><span class="op">=</span><span class="st">'albersUsa'</span>))</span>
 <span id="cb12-3"><a aria-hidden="true" tabindex="-1"></a>points <span class="op">=</span> alt.Chart(state_pop).mark_circle().encode(</span>
@@ -1203,23 +1203,23 @@
 <div class="cell-output cell-output-display" data-execution_count="12">
 
 <style>
-  #altair-viz-86e4797cad6241c09ffabc8abbfd45a3.vega-embed {
+  #altair-viz-93c78218eb224703ae4c951d5a6082b6.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-86e4797cad6241c09ffabc8abbfd45a3.vega-embed details,
-  #altair-viz-86e4797cad6241c09ffabc8abbfd45a3.vega-embed details summary {
+  #altair-viz-93c78218eb224703ae4c951d5a6082b6.vega-embed details,
+  #altair-viz-93c78218eb224703ae4c951d5a6082b6.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-86e4797cad6241c09ffabc8abbfd45a3"></div>
+<div id="altair-viz-93c78218eb224703ae4c951d5a6082b6"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-86e4797cad6241c09ffabc8abbfd45a3") {
-      outputDiv = document.getElementById("altair-viz-86e4797cad6241c09ffabc8abbfd45a3");
+    if (outputDiv.id !== "altair-viz-93c78218eb224703ae4c951d5a6082b6") {
+      outputDiv = document.getElementById("altair-viz-93c78218eb224703ae4c951d5a6082b6");
     }
 
     const paths = {
@@ -1291,7 +1291,7 @@
 </section>
 <section id="for-these-measures-it-is-important-to-control-for-the-size-of-population" class="slide level2">
 <h2>For these measures it is important to control for the size of population</h2>
-<div id="2998249b" class="cell" data-execution_count="13">
+<div id="b12e97ac" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a aria-hidden="true" tabindex="-1"></a>state_pop[<span class="st">'asthma_cases_per_capita'</span>] <span class="op">=</span> state_pop[<span class="st">'number_of_asthma_cases'</span>] <span class="op">/</span> state_pop[<span class="st">'population'</span>]</span>
 <span id="cb13-2"><a aria-hidden="true" tabindex="-1"></a>us_map <span class="op">=</span> (alt.Chart(state_map).mark_geoshape(color<span class="op">=</span><span class="st">'lightgray'</span>, stroke<span class="op">=</span><span class="st">'white'</span>)</span>
 <span id="cb13-3"><a aria-hidden="true" tabindex="-1"></a>          .project(<span class="bu">type</span><span class="op">=</span><span class="st">'albersUsa'</span>))</span>
@@ -1303,23 +1303,23 @@
 <div class="cell-output cell-output-display" data-execution_count="13">
 
 <style>
-  #altair-viz-d72b754841b94db2976d00f259f6ae22.vega-embed {
+  #altair-viz-490df3fc45dd464e8b01521becc1855a.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-d72b754841b94db2976d00f259f6ae22.vega-embed details,
-  #altair-viz-d72b754841b94db2976d00f259f6ae22.vega-embed details summary {
+  #altair-viz-490df3fc45dd464e8b01521becc1855a.vega-embed details,
+  #altair-viz-490df3fc45dd464e8b01521becc1855a.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-d72b754841b94db2976d00f259f6ae22"></div>
+<div id="altair-viz-490df3fc45dd464e8b01521becc1855a"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-d72b754841b94db2976d00f259f6ae22") {
-      outputDiv = document.getElementById("altair-viz-d72b754841b94db2976d00f259f6ae22");
+    if (outputDiv.id !== "altair-viz-490df3fc45dd464e8b01521becc1855a") {
+      outputDiv = document.getElementById("altair-viz-490df3fc45dd464e8b01521becc1855a");
     }
 
     const paths = {
@@ -1393,7 +1393,7 @@
 </section>
 <section id="a-choropleth-map-avoids-overlap-for-large-values-close-to-each-other" class="slide level2">
 <h2>A choropleth map avoids overlap for large values close to each other</h2>
-<div id="7319d22c" class="cell" data-execution_count="14">
+<div id="1f8f31db" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a aria-hidden="true" tabindex="-1"></a>(alt.Chart(state_map).mark_geoshape().transform_lookup(</span>
 <span id="cb14-2"><a aria-hidden="true" tabindex="-1"></a>    lookup<span class="op">=</span><span class="st">'id'</span>,</span>
 <span id="cb14-3"><a aria-hidden="true" tabindex="-1"></a>    from_<span class="op">=</span>alt.LookupData(state_pop, <span class="st">'id'</span>, [<span class="st">'asthma_cases_per_capita'</span>]))</span>
@@ -1402,23 +1402,23 @@
 <div class="cell-output cell-output-display" data-execution_count="14">
 
 <style>
-  #altair-viz-701616583bc54ab1b21b2dace56b56e2.vega-embed {
+  #altair-viz-d7bebb58ee2648f0b61d5ad26f7681a0.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-701616583bc54ab1b21b2dace56b56e2.vega-embed details,
-  #altair-viz-701616583bc54ab1b21b2dace56b56e2.vega-embed details summary {
+  #altair-viz-d7bebb58ee2648f0b61d5ad26f7681a0.vega-embed details,
+  #altair-viz-d7bebb58ee2648f0b61d5ad26f7681a0.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-701616583bc54ab1b21b2dace56b56e2"></div>
+<div id="altair-viz-d7bebb58ee2648f0b61d5ad26f7681a0"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-701616583bc54ab1b21b2dace56b56e2") {
-      outputDiv = document.getElementById("altair-viz-701616583bc54ab1b21b2dace56b56e2");
+    if (outputDiv.id !== "altair-viz-d7bebb58ee2648f0b61d5ad26f7681a0") {
+      outputDiv = document.getElementById("altair-viz-d7bebb58ee2648f0b61d5ad26f7681a0");
     }
 
     const paths = {
@@ -1488,7 +1488,7 @@
 </section>
 <section id="explicitly-setting-the-colour-scale-to-start-from-zero-is-less-misleading" class="slide level2">
 <h2>Explicitly setting the colour scale to start from zero is less misleading</h2>
-<div id="6a1c3ff7" class="cell" data-execution_count="15">
+<div id="b167d50d" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a aria-hidden="true" tabindex="-1"></a>(alt.Chart(state_map).mark_geoshape().transform_lookup(</span>
 <span id="cb15-2"><a aria-hidden="true" tabindex="-1"></a>    lookup<span class="op">=</span><span class="st">'id'</span>,</span>
 <span id="cb15-3"><a aria-hidden="true" tabindex="-1"></a>    from_<span class="op">=</span>alt.LookupData(state_pop, <span class="st">'id'</span>, [<span class="st">'asthma_cases_per_capita'</span>]))</span>
@@ -1497,23 +1497,23 @@
 <div class="cell-output cell-output-display" data-execution_count="15">
 
 <style>
-  #altair-viz-f70eb5a5d27546488bc3110394217752.vega-embed {
+  #altair-viz-06c10c3d0dae48eb81837cac05a6e484.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-f70eb5a5d27546488bc3110394217752.vega-embed details,
-  #altair-viz-f70eb5a5d27546488bc3110394217752.vega-embed details summary {
+  #altair-viz-06c10c3d0dae48eb81837cac05a6e484.vega-embed details,
+  #altair-viz-06c10c3d0dae48eb81837cac05a6e484.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-f70eb5a5d27546488bc3110394217752"></div>
+<div id="altair-viz-06c10c3d0dae48eb81837cac05a6e484"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-f70eb5a5d27546488bc3110394217752") {
-      outputDiv = document.getElementById("altair-viz-f70eb5a5d27546488bc3110394217752");
+    if (outputDiv.id !== "altair-viz-06c10c3d0dae48eb81837cac05a6e484") {
+      outputDiv = document.getElementById("altair-viz-06c10c3d0dae48eb81837cac05a6e484");
     }
 
     const paths = {
