@@ -244,7 +244,7 @@
 </section>
 <section id="reading-in-the-movies-dataset" class="slide level2">
 <h2>Reading in the movies dataset</h2>
-<div id="a185d85f" class="cell" data-execution_count="2">
+<div id="80df4a9e" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a aria-hidden="true" tabindex="-1"></a>movies <span class="op">=</span> pd.read_csv(<span class="st">"data/movies.csv"</span>)</span>
@@ -375,7 +375,7 @@
 </section>
 <section id="creating-a-density-plot-in-altair-requires-two-step" class="slide level2">
 <h2>Creating a density plot in Altair requires two step</h2>
-<div id="5341e4fd" class="cell" data-execution_count="3">
+<div id="70ce1233" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a aria-hidden="true" tabindex="-1"></a><span class="im">import</span> altair <span class="im">as</span> alt</span>
 <span id="cb2-2"><a aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a aria-hidden="true" tabindex="-1"></a>(alt.Chart(movies).transform_density(</span>
@@ -388,23 +388,23 @@
 <div class="cell-output cell-output-display" data-execution_count="3">
 
 <style>
-  #altair-viz-bd796967a7e44acba3a46aee93577a5a.vega-embed {
+  #altair-viz-d6541c7533384076bdc8ae10babc8dff.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-bd796967a7e44acba3a46aee93577a5a.vega-embed details,
-  #altair-viz-bd796967a7e44acba3a46aee93577a5a.vega-embed details summary {
+  #altair-viz-d6541c7533384076bdc8ae10babc8dff.vega-embed details,
+  #altair-viz-d6541c7533384076bdc8ae10babc8dff.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-bd796967a7e44acba3a46aee93577a5a"></div>
+<div id="altair-viz-d6541c7533384076bdc8ae10babc8dff"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-bd796967a7e44acba3a46aee93577a5a") {
-      outputDiv = document.getElementById("altair-viz-bd796967a7e44acba3a46aee93577a5a");
+    if (outputDiv.id !== "altair-viz-d6541c7533384076bdc8ae10babc8dff") {
+      outputDiv = document.getElementById("altair-viz-d6541c7533384076bdc8ae10babc8dff");
     }
 
     const paths = {
@@ -480,7 +480,7 @@
 </section>
 <section id="creating-a-grouped-density-plot-requires-an-explicit-density-grouping" class="slide level2">
 <h2>Creating a grouped density plot requires an explicit density grouping</h2>
-<div id="eb106dac" class="cell" data-execution_count="4">
+<div id="d262974b" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a aria-hidden="true" tabindex="-1"></a>(alt.Chart(movies).transform_density(</span>
 <span id="cb3-2"><a aria-hidden="true" tabindex="-1"></a>    <span class="st">'runtime'</span>,</span>
 <span id="cb3-3"><a aria-hidden="true" tabindex="-1"></a>    groupby<span class="op">=</span>[<span class="st">'genre'</span>],</span>
@@ -492,23 +492,23 @@
 <div class="cell-output cell-output-display" data-execution_count="4">
 
 <style>
-  #altair-viz-8ebfe66712b14017a2894dd6349af325.vega-embed {
+  #altair-viz-ab04e29836ac4e8e8cec08da1a866dc3.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-8ebfe66712b14017a2894dd6349af325.vega-embed details,
-  #altair-viz-8ebfe66712b14017a2894dd6349af325.vega-embed details summary {
+  #altair-viz-ab04e29836ac4e8e8cec08da1a866dc3.vega-embed details,
+  #altair-viz-ab04e29836ac4e8e8cec08da1a866dc3.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-8ebfe66712b14017a2894dd6349af325"></div>
+<div id="altair-viz-ab04e29836ac4e8e8cec08da1a866dc3"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-8ebfe66712b14017a2894dd6349af325") {
-      outputDiv = document.getElementById("altair-viz-8ebfe66712b14017a2894dd6349af325");
+    if (outputDiv.id !== "altair-viz-ab04e29836ac4e8e8cec08da1a866dc3") {
+      outputDiv = document.getElementById("altair-viz-ab04e29836ac4e8e8cec08da1a866dc3");
     }
 
     const paths = {
@@ -582,7 +582,7 @@
 </section>
 <section id="slightly-transparent-areas-reveal-more-details" class="slide level2">
 <h2>Slightly transparent areas reveal more details</h2>
-<div id="71122529" class="cell" data-execution_count="5">
+<div id="c1aae97f" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a aria-hidden="true" tabindex="-1"></a>(alt.Chart(movies).transform_density(</span>
 <span id="cb4-2"><a aria-hidden="true" tabindex="-1"></a>     <span class="st">'runtime'</span>,</span>
 <span id="cb4-3"><a aria-hidden="true" tabindex="-1"></a>     groupby<span class="op">=</span>[<span class="st">'genre'</span>],</span>
@@ -594,23 +594,23 @@
 <div class="cell-output cell-output-display" data-execution_count="5">
 
 <style>
-  #altair-viz-0d185aa268444d14980fd45e5caa12aa.vega-embed {
+  #altair-viz-028c2a2f127e4fbb994c556d2bde9a2a.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-0d185aa268444d14980fd45e5caa12aa.vega-embed details,
-  #altair-viz-0d185aa268444d14980fd45e5caa12aa.vega-embed details summary {
+  #altair-viz-028c2a2f127e4fbb994c556d2bde9a2a.vega-embed details,
+  #altair-viz-028c2a2f127e4fbb994c556d2bde9a2a.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-0d185aa268444d14980fd45e5caa12aa"></div>
+<div id="altair-viz-028c2a2f127e4fbb994c556d2bde9a2a"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-0d185aa268444d14980fd45e5caa12aa") {
-      outputDiv = document.getElementById("altair-viz-0d185aa268444d14980fd45e5caa12aa");
+    if (outputDiv.id !== "altair-viz-028c2a2f127e4fbb994c556d2bde9a2a") {
+      outputDiv = document.getElementById("altair-viz-028c2a2f127e4fbb994c556d2bde9a2a");
     }
 
     const paths = {
@@ -681,7 +681,7 @@
 </section>
 <section id="density-plots-of-small-datasets-can-be-misleading" class="slide level2">
 <h2>Density plots of small datasets can be misleading</h2>
-<div id="1d8b107f" class="cell" data-execution_count="6">
+<div id="791d8b0f" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a aria-hidden="true" tabindex="-1"></a>density <span class="op">=</span> (alt.Chart(movies[:<span class="dv">10</span>]).transform_density(</span>
 <span id="cb5-2"><a aria-hidden="true" tabindex="-1"></a>    <span class="st">'runtime'</span>,</span>
 <span id="cb5-3"><a aria-hidden="true" tabindex="-1"></a>    as_<span class="op">=</span>[<span class="st">'runtime'</span>, <span class="st">'density'</span>])</span>
@@ -692,23 +692,23 @@
 <div class="cell-output cell-output-display" data-execution_count="6">
 
 <style>
-  #altair-viz-d32f97cf466e40649819e04cc411b120.vega-embed {
+  #altair-viz-8509cd49fada4b1d8c647551666c5240.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-d32f97cf466e40649819e04cc411b120.vega-embed details,
-  #altair-viz-d32f97cf466e40649819e04cc411b120.vega-embed details summary {
+  #altair-viz-8509cd49fada4b1d8c647551666c5240.vega-embed details,
+  #altair-viz-8509cd49fada4b1d8c647551666c5240.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-d32f97cf466e40649819e04cc411b120"></div>
+<div id="altair-viz-8509cd49fada4b1d8c647551666c5240"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-d32f97cf466e40649819e04cc411b120") {
-      outputDiv = document.getElementById("altair-viz-d32f97cf466e40649819e04cc411b120");
+    if (outputDiv.id !== "altair-viz-8509cd49fada4b1d8c647551666c5240") {
+      outputDiv = document.getElementById("altair-viz-8509cd49fada4b1d8c647551666c5240");
     }
 
     const paths = {
@@ -779,29 +779,29 @@
 </section>
 <section id="densities-can-be-combined-with-plotting-individual-data-points" class="slide level2">
 <h2>Densities can be combined with plotting individual data points</h2>
-<div id="6cf7342f" class="cell" data-execution_count="7">
+<div id="81facc63" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a aria-hidden="true" tabindex="-1"></a>(density.mark_area(opacity<span class="op">=</span><span class="fl">0.7</span>) <span class="op">+</span></span>
 <span id="cb6-2"><a aria-hidden="true" tabindex="-1"></a> alt.Chart(movies[:<span class="dv">10</span>]).mark_tick(color<span class="op">=</span><span class="st">'black'</span>, yOffset<span class="op">=</span><span class="dv">140</span>).encode(x<span class="op">=</span><span class="st">'runtime'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
 
 <style>
-  #altair-viz-bd40478fc700489a96c4433ed4ff0b23.vega-embed {
+  #altair-viz-509560eaf13c4780881098e3a8e2cbf0.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-bd40478fc700489a96c4433ed4ff0b23.vega-embed details,
-  #altair-viz-bd40478fc700489a96c4433ed4ff0b23.vega-embed details summary {
+  #altair-viz-509560eaf13c4780881098e3a8e2cbf0.vega-embed details,
+  #altair-viz-509560eaf13c4780881098e3a8e2cbf0.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-bd40478fc700489a96c4433ed4ff0b23"></div>
+<div id="altair-viz-509560eaf13c4780881098e3a8e2cbf0"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-bd40478fc700489a96c4433ed4ff0b23") {
-      outputDiv = document.getElementById("altair-viz-bd40478fc700489a96c4433ed4ff0b23");
+    if (outputDiv.id !== "altair-viz-509560eaf13c4780881098e3a8e2cbf0") {
+      outputDiv = document.getElementById("altair-viz-509560eaf13c4780881098e3a8e2cbf0");
     }
 
     const paths = {
@@ -871,7 +871,7 @@
 </section>
 <section id="scaling-densities-by-the-numbers-of-observations-is-possible-but-not-very-effective" class="slide level2">
 <h2>Scaling densities by the numbers of observations is possible but not very effective</h2>
-<div id="ac9f9b45" class="cell" data-execution_count="8">
+<div id="b567f61c" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a aria-hidden="true" tabindex="-1"></a>(alt.Chart(movies[:<span class="dv">10</span>]).transform_density(</span>
 <span id="cb7-2"><a aria-hidden="true" tabindex="-1"></a>    <span class="st">'runtime'</span>,</span>
 <span id="cb7-3"><a aria-hidden="true" tabindex="-1"></a>    as_<span class="op">=</span>[<span class="st">'runtime'</span>, <span class="st">'density'</span>],</span>
@@ -882,23 +882,23 @@
 <div class="cell-output cell-output-display" data-execution_count="8">
 
 <style>
-  #altair-viz-5650bb8501744728b77577284c056b9d.vega-embed {
+  #altair-viz-2b0cec5e7388411a9ac435c4d556013e.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-5650bb8501744728b77577284c056b9d.vega-embed details,
-  #altair-viz-5650bb8501744728b77577284c056b9d.vega-embed details summary {
+  #altair-viz-2b0cec5e7388411a9ac435c4d556013e.vega-embed details,
+  #altair-viz-2b0cec5e7388411a9ac435c4d556013e.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-5650bb8501744728b77577284c056b9d"></div>
+<div id="altair-viz-2b0cec5e7388411a9ac435c4d556013e"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-5650bb8501744728b77577284c056b9d") {
-      outputDiv = document.getElementById("altair-viz-5650bb8501744728b77577284c056b9d");
+    if (outputDiv.id !== "altair-viz-2b0cec5e7388411a9ac435c4d556013e") {
+      outputDiv = document.getElementById("altair-viz-2b0cec5e7388411a9ac435c4d556013e");
     }
 
     const paths = {
