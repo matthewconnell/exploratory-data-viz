@@ -228,7 +228,7 @@
 </section>
 <section id="a-tail-of-global-deforestation" class="slide level2">
 <h2>A tail of global deforestation</h2>
-<div id="0e4fc110" class="cell" data-execution_count="2">
+<div id="568a8cde" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a aria-hidden="true" tabindex="-1"></a><span class="im">import</span> altair <span class="im">as</span> alt</span>
 <span id="cb1-3"><a aria-hidden="true" tabindex="-1"></a></span>
@@ -241,23 +241,23 @@
 <div class="cell-output cell-output-display" data-execution_count="2">
 
 <style>
-  #altair-viz-0761f2c709ef4b959cb9f62de16349c7.vega-embed {
+  #altair-viz-b97f354d6b3749a5b82d5ed1f0f18206.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-0761f2c709ef4b959cb9f62de16349c7.vega-embed details,
-  #altair-viz-0761f2c709ef4b959cb9f62de16349c7.vega-embed details summary {
+  #altair-viz-b97f354d6b3749a5b82d5ed1f0f18206.vega-embed details,
+  #altair-viz-b97f354d6b3749a5b82d5ed1f0f18206.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-0761f2c709ef4b959cb9f62de16349c7"></div>
+<div id="altair-viz-b97f354d6b3749a5b82d5ed1f0f18206"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-0761f2c709ef4b959cb9f62de16349c7") {
-      outputDiv = document.getElementById("altair-viz-0761f2c709ef4b959cb9f62de16349c7");
+    if (outputDiv.id !== "altair-viz-b97f354d6b3749a5b82d5ed1f0f18206") {
+      outputDiv = document.getElementById("altair-viz-b97f354d6b3749a5b82d5ed1f0f18206");
     }
 
     const paths = {
@@ -328,7 +328,7 @@
 </section>
 <section id="half-of-the-tropical-deforestation-is-localized-to-only-two-countries" class="slide level2">
 <h2>Half of the tropical deforestation is localized to only two countries</h2>
-<div id="23a0ab40" class="cell" data-execution_count="3">
+<div id="c37cc675" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a aria-hidden="true" tabindex="-1"></a>top_deforestation_regions <span class="op">=</span> pd.read_csv(<span class="st">'data/region-share-tropical-deforestation.csv'</span>)</span>
 <span id="cb2-2"><a aria-hidden="true" tabindex="-1"></a>title <span class="op">=</span> <span class="st">'Brazil and Indonesia account for almost half of global deforestation'</span></span>
 <span id="cb2-3"><a aria-hidden="true" tabindex="-1"></a>alt.Chart(top_deforestation_regions, title<span class="op">=</span>title).mark_bar().encode(</span>
@@ -337,23 +337,23 @@
 <div class="cell-output cell-output-display" data-execution_count="3">
 
 <style>
-  #altair-viz-aabd96a599814967a071ce896c9610a1.vega-embed {
+  #altair-viz-97f62b58bc2a46a985215b8291e7ff2c.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-aabd96a599814967a071ce896c9610a1.vega-embed details,
-  #altair-viz-aabd96a599814967a071ce896c9610a1.vega-embed details summary {
+  #altair-viz-97f62b58bc2a46a985215b8291e7ff2c.vega-embed details,
+  #altair-viz-97f62b58bc2a46a985215b8291e7ff2c.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-aabd96a599814967a071ce896c9610a1"></div>
+<div id="altair-viz-97f62b58bc2a46a985215b8291e7ff2c"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-aabd96a599814967a071ce896c9610a1") {
-      outputDiv = document.getElementById("altair-viz-aabd96a599814967a071ce896c9610a1");
+    if (outputDiv.id !== "altair-viz-97f62b58bc2a46a985215b8291e7ff2c") {
+      outputDiv = document.getElementById("altair-viz-97f62b58bc2a46a985215b8291e7ff2c");
     }
 
     const paths = {
@@ -426,7 +426,7 @@
 </section>
 <section id="a-large-part-of-deforestation-is-driven-by-exported-commodities" class="slide level2">
 <h2>A large part of deforestation is driven by exported commodities</h2>
-<div id="6faf2051" class="cell" data-execution_count="4">
+<div id="55683694" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a aria-hidden="true" tabindex="-1"></a>deforestation_exported <span class="op">=</span> pd.read_csv(<span class="st">'data/share-deforestation-exported.csv'</span>, parse_dates<span class="op">=</span>[<span class="st">'Year'</span>])</span>
 <span id="cb3-2"><a aria-hidden="true" tabindex="-1"></a>title <span class="op">=</span> <span class="st">'Exported commodities contribute heavily to deforestation'</span></span>
 <span id="cb3-3"><a aria-hidden="true" tabindex="-1"></a>alt.Chart(deforestation_exported, title<span class="op">=</span>title).mark_line().encode(</span>
@@ -436,23 +436,23 @@
 <div class="cell-output cell-output-display" data-execution_count="4">
 
 <style>
-  #altair-viz-4abe059659d94ceb897a1171f9cc5357.vega-embed {
+  #altair-viz-49a63c0016f44bf0b8f940c46693efbe.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-4abe059659d94ceb897a1171f9cc5357.vega-embed details,
-  #altair-viz-4abe059659d94ceb897a1171f9cc5357.vega-embed details summary {
+  #altair-viz-49a63c0016f44bf0b8f940c46693efbe.vega-embed details,
+  #altair-viz-49a63c0016f44bf0b8f940c46693efbe.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-4abe059659d94ceb897a1171f9cc5357"></div>
+<div id="altair-viz-49a63c0016f44bf0b8f940c46693efbe"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-4abe059659d94ceb897a1171f9cc5357") {
-      outputDiv = document.getElementById("altair-viz-4abe059659d94ceb897a1171f9cc5357");
+    if (outputDiv.id !== "altair-viz-49a63c0016f44bf0b8f940c46693efbe") {
+      outputDiv = document.getElementById("altair-viz-49a63c0016f44bf0b8f940c46693efbe");
     }
 
     const paths = {
@@ -524,7 +524,7 @@
 </section>
 <section id="demand-for-beef-is-the-biggest-reason-for-deforestation-in-brazil" class="slide level2">
 <h2>Demand for beef is the biggest reason for deforestation in Brazil</h2>
-<div id="d48a125e" class="cell" data-execution_count="5">
+<div id="800afb4d" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a aria-hidden="true" tabindex="-1"></a>brazil_drivers <span class="op">=</span> pd.read_csv(<span class="st">"data/drivers-deforestation_2003-2013_brazil.csv"</span>)</span>
 <span id="cb4-2"><a aria-hidden="true" tabindex="-1"></a>title <span class="op">=</span> <span class="st">"Cattle pasture was the biggest deforestation driver in Brazil 2003-2013"</span></span>
 <span id="cb4-3"><a aria-hidden="true" tabindex="-1"></a>alt.Chart(brazil_drivers, title<span class="op">=</span>title).mark_bar().encode(</span>
@@ -534,23 +534,23 @@
 <div class="cell-output cell-output-display" data-execution_count="5">
 
 <style>
-  #altair-viz-4287739f8d53483eb0778c2f2abd9064.vega-embed {
+  #altair-viz-64d383e5efe84daa8a54a6940e10a213.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-4287739f8d53483eb0778c2f2abd9064.vega-embed details,
-  #altair-viz-4287739f8d53483eb0778c2f2abd9064.vega-embed details summary {
+  #altair-viz-64d383e5efe84daa8a54a6940e10a213.vega-embed details,
+  #altair-viz-64d383e5efe84daa8a54a6940e10a213.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-4287739f8d53483eb0778c2f2abd9064"></div>
+<div id="altair-viz-64d383e5efe84daa8a54a6940e10a213"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-4287739f8d53483eb0778c2f2abd9064") {
-      outputDiv = document.getElementById("altair-viz-4287739f8d53483eb0778c2f2abd9064");
+    if (outputDiv.id !== "altair-viz-64d383e5efe84daa8a54a6940e10a213") {
+      outputDiv = document.getElementById("altair-viz-64d383e5efe84daa8a54a6940e10a213");
     }
 
     const paths = {
@@ -622,7 +622,7 @@
 </section>
 <section id="beef-is-highly-inefficient-use-of-land-to-generate-calories" class="slide level2">
 <h2>Beef is highly inefficient use of land to generate calories</h2>
-<div id="e14d078b" class="cell" data-execution_count="6">
+<div id="38513749" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a aria-hidden="true" tabindex="-1"></a>land_use <span class="op">=</span> pd.read_csv(<span class="st">'data/land-use-per-kcal.csv'</span>)</span>
 <span id="cb5-2"><a aria-hidden="true" tabindex="-1"></a>title <span class="op">=</span> <span class="st">'Beef require the most land per 1000 kcal of food generated'</span></span>
 <span id="cb5-3"><a aria-hidden="true" tabindex="-1"></a>alt.Chart(land_use, title<span class="op">=</span>title).mark_bar().encode(</span>
@@ -631,23 +631,23 @@
 <div class="cell-output cell-output-display" data-execution_count="6">
 
 <style>
-  #altair-viz-3092ce06e856418997a9271c9928a7e7.vega-embed {
+  #altair-viz-01d18f3716b94d0c87be1ea7dbce717f.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-3092ce06e856418997a9271c9928a7e7.vega-embed details,
-  #altair-viz-3092ce06e856418997a9271c9928a7e7.vega-embed details summary {
+  #altair-viz-01d18f3716b94d0c87be1ea7dbce717f.vega-embed details,
+  #altair-viz-01d18f3716b94d0c87be1ea7dbce717f.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-3092ce06e856418997a9271c9928a7e7"></div>
+<div id="altair-viz-01d18f3716b94d0c87be1ea7dbce717f"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-3092ce06e856418997a9271c9928a7e7") {
-      outputDiv = document.getElementById("altair-viz-3092ce06e856418997a9271c9928a7e7");
+    if (outputDiv.id !== "altair-viz-01d18f3716b94d0c87be1ea7dbce717f") {
+      outputDiv = document.getElementById("altair-viz-01d18f3716b94d0c87be1ea7dbce717f");
     }
 
     const paths = {
@@ -721,7 +721,7 @@
 </section>
 <section id="palm-oil-is-the-biggest-contributor-to-deforestation-in-indonesia" class="slide level2">
 <h2>Palm oil is the biggest contributor to deforestation in Indonesia</h2>
-<div id="29126c0b" class="cell" data-execution_count="7">
+<div id="a6d5cdbe" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a aria-hidden="true" tabindex="-1"></a>indonesia_drivers <span class="op">=</span> pd.read_csv(<span class="st">'data/drivers-deforestation_2003-2013_indonesia.csv'</span>)</span>
 <span id="cb6-2"><a aria-hidden="true" tabindex="-1"></a>title <span class="op">=</span> <span class="st">'Palm oil was the biggest contribtutor in Indonesia 2003-2013'</span> </span>
 <span id="cb6-3"><a aria-hidden="true" tabindex="-1"></a>alt.Chart(indonesia_drivers, title<span class="op">=</span>title).mark_bar().encode(</span>
@@ -730,23 +730,23 @@
 <div class="cell-output cell-output-display" data-execution_count="7">
 
 <style>
-  #altair-viz-b89ada7cf2574176ac2feadbfc8102a9.vega-embed {
+  #altair-viz-ebc5c73d9c3c472da5ee978d5d590e46.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-b89ada7cf2574176ac2feadbfc8102a9.vega-embed details,
-  #altair-viz-b89ada7cf2574176ac2feadbfc8102a9.vega-embed details summary {
+  #altair-viz-ebc5c73d9c3c472da5ee978d5d590e46.vega-embed details,
+  #altair-viz-ebc5c73d9c3c472da5ee978d5d590e46.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-b89ada7cf2574176ac2feadbfc8102a9"></div>
+<div id="altair-viz-ebc5c73d9c3c472da5ee978d5d590e46"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-b89ada7cf2574176ac2feadbfc8102a9") {
-      outputDiv = document.getElementById("altair-viz-b89ada7cf2574176ac2feadbfc8102a9");
+    if (outputDiv.id !== "altair-viz-ebc5c73d9c3c472da5ee978d5d590e46") {
+      outputDiv = document.getElementById("altair-viz-ebc5c73d9c3c472da5ee978d5d590e46");
     }
 
     const paths = {
@@ -820,7 +820,7 @@
 </section>
 <section id="palm-oil-is-the-most-efficient-use-of-land-for-vegetable-oil-production" class="slide level2">
 <h2>Palm oil is the most efficient use of land for vegetable oil production</h2>
-<div id="c934936c" class="cell" data-execution_count="8">
+<div id="c4679e83" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a aria-hidden="true" tabindex="-1"></a>oil_land_use <span class="op">=</span> pd.read_csv(<span class="st">'data/area-land-needed-to-global-oil.csv'</span>)</span>
 <span id="cb7-2"><a aria-hidden="true" tabindex="-1"></a>title <span class="op">=</span> <span class="st">'Palm trees are a the most efficient oil crop'</span></span>
 <span id="cb7-3"><a aria-hidden="true" tabindex="-1"></a>alt.Chart(oil_land_use, title<span class="op">=</span>title).mark_bar().encode(</span>
@@ -829,23 +829,23 @@
 <div class="cell-output cell-output-display" data-execution_count="8">
 
 <style>
-  #altair-viz-c39b16ac44304f7db0af78d44545fc44.vega-embed {
+  #altair-viz-948bb873c47442f49a28c699ccdb2555.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-c39b16ac44304f7db0af78d44545fc44.vega-embed details,
-  #altair-viz-c39b16ac44304f7db0af78d44545fc44.vega-embed details summary {
+  #altair-viz-948bb873c47442f49a28c699ccdb2555.vega-embed details,
+  #altair-viz-948bb873c47442f49a28c699ccdb2555.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-c39b16ac44304f7db0af78d44545fc44"></div>
+<div id="altair-viz-948bb873c47442f49a28c699ccdb2555"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-c39b16ac44304f7db0af78d44545fc44") {
-      outputDiv = document.getElementById("altair-viz-c39b16ac44304f7db0af78d44545fc44");
+    if (outputDiv.id !== "altair-viz-948bb873c47442f49a28c699ccdb2555") {
+      outputDiv = document.getElementById("altair-viz-948bb873c47442f49a28c699ccdb2555");
     }
 
     const paths = {
